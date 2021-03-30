@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>Basic Form</title>
+  <link rel="stylesheet" href="style.css"></link>
+
+</head>
+<body>
+    <h2>Welcome to a sign-up page</h2>
+    <form>
+        <fieldset>
+            <legend>Sign up for an Account</legend>
+            <p>
+                <label for='firstname'>   
+                    First name: 
+                    <span class="required">(required)</span>
+                </label><br>
+                <input type='text' name='firstname' id='firstname' aria-required>
+            </p>
+            <p>        
+                <label for='lastname'>   
+                    Last name: 
+                    <span class="required">(required)</span>
+                </label><br>
+                <input type='text' name='lastname' id='lastname' aria-required>
+            </p>
+            <p>
+                <label for='email'>   
+                    Email address: 
+                <span class="required">(required)</span>
+                </label><br>
+                <input type='text' name='email' id='email' placeholder="jane@example.com" aria-required>
+            </p>    
+        </fieldset>
+    </form>
+</body>
