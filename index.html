@@ -7,31 +7,100 @@
 
 </head>
 <body>
-    <h2>Welcome to a sign-up page</h2>
+    <h2 class='welcome'>Welcome to a sign-up page</h2>
     <form>
-        <fieldset>
-            <legend>Sign up for an Account</legend>
+        <fieldset class='signup'>
+            <legend>
+                Sign up for an Account
+            </legend>
             <p>
                 <label for='firstname'>   
                     First name: 
-                    <span class="required">(required)</span>
+                    <span class='required'>(required)</span>
                 </label><br>
-                <input type='text' name='firstname' id='firstname' aria-required>
+                <input type='text' name='firstname' id='firstname' required>
             </p>
             <p>        
                 <label for='lastname'>   
                     Last name: 
-                    <span class="required">(required)</span>
+                    <span class='required'>(required)</span>
                 </label><br>
-                <input type='text' name='lastname' id='lastname' aria-required>
+                <input type='text' name='lastname' id='lastname' required>
             </p>
             <p>
                 <label for='email'>   
                     Email address: 
-                <span class="required">(required)</span>
+                <span class='required'>(required)</span>
                 </label><br>
-                <input type='text' name='email' id='email' placeholder="jane@example.com" aria-required>
+                <input type='email' name='email' id='email' placeholder='jane@example.com' required>
+            </p>
+            <p>
+                <label for='phone'>
+                    Phone:
+                </label><br>
+                <input type='phone' name='phone' id='phone' placeholder='919-555-1234'>
             </p>    
         </fieldset>
+        <fieldset class='mailinglist'>
+            <legend>
+                Can we add you to the mailing list?
+            </legend>
+            <ul class='radiogroup' role='radiogroup'>
+                <li>
+                  <label for="yes">
+                    <input id="yes" required="" type="radio" name="answers" value="yes">
+                    Yes
+                  </label>
+                </li>
+                <li>
+                  <label for="no">
+                    <input id="no" type="radio" name="answers" value="no">
+                    No
+                  </label>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>
+                What are your favorite sports?
+            </legend>
+            <ul class='checkgroup' role='group'>
+              <li>
+                <label for='baseball'>
+                  <input id='baseball' type='checkbox' name='sports' value='baseball'>
+                  Baseball
+                </label>
+              </li>
+              <li>
+                <label for='basketball'>
+                  <input id='basketball' type='checkbox' name='sports' value='basketball'>
+                  Basketball
+                </label>
+              </li>
+              <li>
+                <label for='football'>
+                  <input id='football' type='checkbox' name='sports' value='football'>
+                  Football
+                </label>
+              </li>
+              <li>
+                <label for='golf'>
+                  <input id='golf' type='checkbox' name='sports' value='golf'>
+                  Golf
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+              <legend>
+                  What's your favorite time of day?
+                </legend>
+              <select name='times' id=names='times'>
+                  <option value='morning'>Morning</option>
+                  <option value='midday'>Midday</option>
+                  <option value='dusk'>Dusk</option>
+                  <option value='evening'>Evening</option>
+              </select>
+          </fieldset>
     </form>
 </body>
