@@ -48,7 +48,7 @@
             <ul class='radiogroup' role='radiogroup'>
                 <li>
                   <label for="yes">
-                    <input id="yes" required="" type="radio" name="answers" value="yes">
+                    <input id="yes" type="radio" name="answers" value="yes">
                     Yes
                   </label>
                 </li>
@@ -96,11 +96,14 @@
                   What's your favorite time of day?
                 </legend>
               <select name='times' id=names='times'>
+                  <option value=''></option>
                   <option value='morning'>Morning</option>
                   <option value='midday'>Midday</option>
                   <option value='dusk'>Dusk</option>
                   <option value='evening'>Evening</option>
               </select>
           </fieldset>
+
+          <button class='submit' type="submit">Submit Form</button>
     </form>
 </body>

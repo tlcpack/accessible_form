@@ -28,3 +28,13 @@ legend {
 .checkgroup {
     list-style-type: none;
 }
+
+.submit {
+    font-size: large;
+    font-weight: bold;
+    margin: 2rem;
+    border-radius: 5px;
+    width: 200px;
+    height:65px;
+    background:lightseagreen;
+}
